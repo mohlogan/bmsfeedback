@@ -1,0 +1,6 @@
+framework module Pods_BMSFeedback_iOS {
+  umbrella header "Pods-BMSFeedback iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
