@@ -1057,6 +1057,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E8F892D23E084F8553B87629 /* Pods-BMSFeedback iOS.debug.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1085,6 +1086,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DE62E3171F4A8FF113EEB19 /* Pods-BMSFeedback iOS.release.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
