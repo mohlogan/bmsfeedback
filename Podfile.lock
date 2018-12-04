@@ -1,20 +1,16 @@
 PODS:
   - IBMMobileFirstPlatformFoundation (8.0.2018111416)
-  - SSZipArchive (2.1.4)
 
 DEPENDENCIES:
   - IBMMobileFirstPlatformFoundation
-  - SSZipArchive
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - IBMMobileFirstPlatformFoundation
-    - SSZipArchive
 
 SPEC CHECKSUMS:
   IBMMobileFirstPlatformFoundation: 374872f2bede564f1b755e2ad34c71ef3406af9a
-  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
 
-PODFILE CHECKSUM: dd6114824c68b105c057cb50fb9179d7b051eb4a
+PODFILE CHECKSUM: 520710c32c2304e4bfd1b8a6b373927552548b6c
 
 COCOAPODS: 1.5.0

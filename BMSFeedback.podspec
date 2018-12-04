@@ -10,11 +10,17 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => 'https://github.com/mohlogan/bms-clientsdk-swift-analytics-feedback.git', :tag => s.version }
 
-  s.source_files = 'Source/**/*.swift','Source/Feedback/Resource/*.h'
+  s.subspec 'SSZipArchive' do |ss|
+    ss.source_files = 'Source/SSZipArchive/*.{m,h}', 'Source/SSZipArchive/minizip/*.{c,h}', 'Source/SSZipArchive/minizip/aes/*.{c,h}'
+    ss.libraries = 'z'
+    ss.pod_target_xcconfig = {'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/Source/SSZipArchive','LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/Source/SSZipArchive'}
+    ss.public_header_files= 'Source/SSZipArchive/*.h'
+  end
+
+  s.source_files = 'Source/**/*.swift','Source/Resource/*.h'
   s.dependency 'IBMMobileFirstPlatformFoundation'
-  s.dependency 'SSZipArchive'
 
   s.requires_arc = true
-  s.ios.resources = ['Source/Feedback/Resources/*.{storyboard,xcassets,json,imageset,png}']
+  s.ios.resources = ['Source/Resources/*.{storyboard,xcassets,json,imageset,png}']
   s.ios.deployment_target = '8.0'
 end

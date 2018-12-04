@@ -84,7 +84,6 @@ void init_keys(const char *passwd, uint32_t *pkeys, const z_crc_t *pcrc_32_tab)
 
 /***************************************************************************/
 
-#ifndef NOCRYPT
 int cryptrand(unsigned char *buf, unsigned int len)
 {
 #ifdef _WIN32
@@ -141,6 +140,5 @@ int crypthead(const char *passwd, uint8_t *buf, int buf_size, uint32_t *pkeys,
     buf[n++] = (uint8_t)zencode(pkeys, pcrc_32_tab, verify2, t);
     return n;
 }
-#endif
 
 /***************************************************************************/

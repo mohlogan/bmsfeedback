@@ -20,7 +20,6 @@
 import UIKit
 import Foundation
 import IBMMobileFirstPlatformFoundation
-import SSZipArchive
 
 // MARK: -
 

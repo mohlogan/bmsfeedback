@@ -15,6 +15,8 @@
 @import Foundation;
 @import CoreLocation;
 
+#import "SSZipArchive.h"
+
 //! Project version number for BMSFeedback.
 FOUNDATION_EXPORT double BMSFeedbackVersionNumber;
 

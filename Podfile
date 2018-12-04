@@ -3,7 +3,7 @@ use_frameworks!
 
 def shared_pod
 	pod 'IBMMobileFirstPlatformFoundation'
-	pod 'SSZipArchive'
+	#pod 'SSZipArchive'
 end
 
 
