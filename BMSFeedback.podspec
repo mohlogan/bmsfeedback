@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   end
 
   s.source_files = 'Source/**/*.swift','Source/Resource/*.h'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
   s.dependency 'IBMMobileFirstPlatformFoundation'
 
   s.requires_arc = true
